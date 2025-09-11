@@ -7,43 +7,50 @@
     <title>Forside - Adrians Butikk</title>
 </head>
 <body>
-    <header>
-        <a href="index.html" id="mainlogo">Adrians Butikk</a>
+    <header id="global-header">
+        <a href="index.html" id="mainlogo">LOGO</a>
         <nav>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="mal.html">Mal</a></li>
                 <li><a href="ovelse.html">Labøvelse</a></li>
-                <li><a href="#ko">Kontakt oss</a></li>
+                <li><a href="#tk">Ta Kontakt</a></li>
             </ul>
         </nav>
     </header>
-    
+
     <main>
 
-        <sections>
+        <section class="deal.section">
             <h2>Hovedområde</h2>
 
             <article>
-                <img src="https://lipsum.app/random/1600x900">
+
+                <img src="https://lipsum.app/random/1600x900" alt="">
                 <h3>studieplan</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
             </article>
 
             <article>
-                <img src="https://lipsum.app/random/1600x900">
+
+                <img src="https://lipsum.app/random/1600x900" alt="">
                 <h3>Kontakt Oss</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
             </article>
 
             <article>
-                <img src="https://lipsum.app/random/1600x900">
+
+                <img src="https://lipsum.app/random/1600x900" alt="">
                 <h3>Kommer snart..</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+
             </article>
-        </sections>
+        </section>
 
         <aside>
+
             <h4>Semantisk HTML</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <ul>
@@ -53,28 +60,34 @@
                 <li><a href="https://www.w3schools.com/html/html_formatting.asp">HTML Formatting</a></li>
                 <li><a href="https://www.w3schools.com/html/html_colors.asp">HTML Colors</a></li>
             </ul>
+
             <h4>Hva er HTML 5</h4>
-            <a href="https://duckduckgo.com/?t=ffab&q=html+5&ia=answer">Se mer om HTML5</a>
+            <a id="#hvaerhtml" href="https://duckduckgo.com/?t=ffab&q=html+5&ia=answer">Se mer om HTML5</a>
+            
         </aside>
 
     </main>
+
 </body>
-<footer id="ko">
-    <h4> Ta kontakt </h4>
+<footer id="tk">
+  <h4> Ta kontakt </h4>
     <form>
         <label for="name">Navn</label><br>
-        <input for="text" id="name" placeholder="Navn her.."><br>
+        <input type="text" id="name" placeholder="Navn her.."><br>
         <label for="emne">Emne</label><br>
-        <input for="text" id="emne" placeholder="Emne her.."><br>
+        <input type="text" id="emne" placeholder="Emne her.."><br>
         <label for="epost">Epost</label><br>
-        <input for="text" id="epost" placeholder="Din epost her.."><br>
+        <input type="email" id="epost" placeholder="Din epost her.."><br>
         <label for="melding">Melding</label><br>
-        <input for="text" id="melding" placeholder="Din melding her.."><br>
-        <textarea id="melding" rows="5"></textarea>
-
+        <textarea id="melding" rows="5" placeholder="Din melding her..."></textarea>
     </form>
+
+    <label>
+<input class="btn" type="submit" value="Send Inn">
+    </label>
     
-    <p>Navn: adrian michelsen</p>
+    <p>Navn: Adrian Michelsen</p>
     <p>e-post: adriam@hiof.no</p>
 </footer>
+
 </html>
